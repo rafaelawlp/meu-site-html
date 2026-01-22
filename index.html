@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oi meu docinho</title>
+
+<style>
+    body{
+        background-color: pink;
+    }
+
+    
+    .painel{
+        margin: auto;
+        background-color: white;
+        width: 500px;
+        height: 600px;
+        border-radius: 20px;
+        text-align: center;
+        padding-top: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #sim{
+        height: 40px;
+        width: 60px;
+        background-color: palevioletred;
+        border: 2px solid white;
+        border-radius: 10px;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: -60px;
+
+    }
+    #nao{
+        position: absolute;
+        height: 40px;
+        width: 60px;
+        background-color: palevioletred;
+        border: 2px solid white;
+        border-radius: 10px;
+        color: white;
+        margin-left: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+    }
+
+
+</style>
+
+</head>
+<body>
+    
+   
+    <div class="painel">
+        <h1> Oi meu Rafael ❤︎</h1>
+         <img src="https://i.pinimg.com/originals/2b/b4/7f/2bb47f60e6d12bbd743ac2960eb63b0c.gif" alt="">
+        <h3>Aceita fazer sapecagens comigo? ｡◕‿◕｡</h3>
+        
+       <a href="https://youtu.be/oRvND-r57Us?si=91SN3CWI7Emz-303" ><button id= "sim" > Sim! </button></a>
+        <button onmouseover="fuja()" id= "nao"> Não! </button>
+        
+        
+        
+       
+        
+
+
+    </div>
+
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY= alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+
+
+
+
+
+        }
+    </script>
+
+</body>
+</html>
